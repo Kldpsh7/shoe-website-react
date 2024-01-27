@@ -1,0 +1,24 @@
+.list-item{
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+}
+
+.span-div span{
+    margin: 0 10px;
+}
+
+.button-div button{
+    margin:  0 10px;
+    border: 1px solid rgb(60, 167, 110);
+    background-color: rgb(60, 167, 110);
+    border-radius: 5px;
+    color: white;
+    padding: 4px;
+}
+.button-div button:hover{
+    background-color: rgb(35, 103, 67);
+    border-color: rgb(35, 103, 67);
+    cursor:pointer;
+}

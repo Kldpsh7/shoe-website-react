@@ -8,7 +8,7 @@ const ItemsList = (props) => {
     const stockCtx = useContext(StockContext);
     const items=stockCtx.items;
 
-    return <div>
+    return <div className='items-list'>
         {items.map(item=>{
             return <ItemListItem
                 id={item.id}

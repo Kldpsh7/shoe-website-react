@@ -40,7 +40,7 @@ const NewArticleFrom = (props) => {
                 name:'price',
             }}/>
             <div>
-                <p>Quantity Available</p>
+                <p className='quantity-heading'>Quantity Available</p>
                 <div className='form-quantity-div'>
                     <Input label='S' input={{
                         type:'number',

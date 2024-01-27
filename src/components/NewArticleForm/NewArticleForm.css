@@ -2,13 +2,41 @@
     display: inline-flex;
     justify-content: space-between;
     text-align: center;
+    background-color: rgb(89, 81, 81);
+    color: white;
+    border-radius: 10px;
+    width:fit-content;
+    padding: 2rem;
+    margin-top: 2rem;
 }
+
 
 .form-quantity-div{
     display: inline-flex;
     justify-content: space-between;
+    margin: 0 1rem;
+    padding-top: 0;
+}
+
+.quantity-heading{
+    margin: -1rem 10px 5px 10px;
+    padding: 0;
 }
 
 .form-quantity-div input{
     width: 2.5rem;
+}
+
+.new-article-form button{
+    height: fit-content;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid rgb(68, 201, 156);
+    background-color: rgb(68, 201, 156);
+    color: white;
+}
+
+.new-article-form button:hover{
+    background-color: rgb(41, 158, 119);
+    border-color: rgb(41, 158, 119);
 }

@@ -11,16 +11,21 @@ const ItemListItem = (props) => {
     }
 
 
-    return <div>
-        <span>{props.name}</span>
-        <span>{props.description}</span>
-        <span>{props.price}</span>
-        <div>
+    return <>
+    <div className='list-item'>
+        <div className='span-div'>
+            <span>{props.name}</span>
+            <span>{props.description}</span>
+            <span>{props.price}</span>
+        </div>
+        <div className='button-div'>
             <button id='s' onClick={buyButtonHandler} >{`Buy Small (${props.s})`}</button>
             <button id='m' onClick={buyButtonHandler} >{`Buy Medium (${props.m})`}</button>
             <button id='l' onClick={buyButtonHandler} >{`Buy Large (${props.l})`}</button>
         </div>
     </div>
+    <hr/>
+    </>
 }
 
 export default ItemListItem;
