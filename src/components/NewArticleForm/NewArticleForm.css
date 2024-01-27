@@ -1,0 +1,14 @@
+.new-article-form{
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-quantity-div{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.form-quantity-div input{
+    width: 2.5rem;
+}

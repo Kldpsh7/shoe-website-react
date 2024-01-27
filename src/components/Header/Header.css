@@ -1,0 +1,13 @@
+header{
+    height: 5rem;
+    margin:0;
+    background-color: rgb(6, 54, 40);
+    color: white;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.main-heading{
+    margin:1rem auto auto 5rem;
+}

@@ -1,0 +1,28 @@
+.header-cart-button{
+    display: inline-flex;
+    height: min-content;
+    background-color: rgb(33, 135, 106);
+    color: rgb(145, 96, 24);
+    border-radius: 10px;
+    border:none;
+    font-size: 20px;
+    padding:0 1rem;
+    margin-right: 5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-cart-button:hover{
+    background-color: rgb(24, 89, 71);
+}
+
+.cart-quantity{
+    background-color: rgb(6, 54, 40);
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin: auto 10px;
+}
+
+.cart-icon{
+    margin-left: 10px;
+}
