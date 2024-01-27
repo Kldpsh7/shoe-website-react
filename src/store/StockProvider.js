@@ -20,12 +20,12 @@ const StockProvider = (props) => {
 
     const addToCartHandler = (id,size) => {
         const itemStockIndex = stockContext.items.findIndex(item=>item.id===id);
-        if(stockContext.items[itemStockIndex].size===0){
+        if(stockContext.items[itemStockIndex][size]===0){
             return
         }else{
             const itemIndexInCart = stockContext.cartItems.findIndex(item=>item.id===id);
             if(itemIndexInCart>=0){
-                stockContext.cartItems[itemIndexInCart].size+=1
+                stockContext.cartItems[itemIndexInCart][size]+=1
             }else{
                 const newItemForCart = {
                     id:id,
@@ -35,10 +35,10 @@ const StockProvider = (props) => {
                     m:0,
                     l:0
                 };
-                newItemForCart.size+=1;
+                newItemForCart[size]+=1;
                 stockContext.cartItems.push(newItemForCart);
             }
-            stockContext.items[itemStockIndex].size-=1;
+            stockContext.items[itemStockIndex][size]-=1;
             stockContext.cartTotal+=stockContext.items[itemStockIndex].price;
             stockContext.itemsInCart+=1;
             setCartState({
