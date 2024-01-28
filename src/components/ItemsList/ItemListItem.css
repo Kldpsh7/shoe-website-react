@@ -2,23 +2,52 @@
     display: inline-flex;
     justify-content: space-between;
     text-align: left;
-    width: 100%;
+    width: 100%;    
+    font-family:Arial, Helvetica, sans-serif
 }
 
-.span-div span{
-    margin: 0 10px;
-}
-
-.button-div button{
-    margin:  0 10px;
+.button{
+    margin:  10px 10px;
     border: 1px solid rgb(60, 167, 110);
     background-color: rgb(60, 167, 110);
     border-radius: 5px;
     color: white;
     padding: 4px;
 }
-.button-div button:hover{
+.button:hover{
     background-color: rgb(35, 103, 67);
     border-color: rgb(35, 103, 67);
     cursor:pointer;
 }
+
+.item-name{
+    font-size: 25px;
+    display: inline;
+}
+
+.item-price{
+    font-size: 25px;
+    color: rgb(183, 117, 42);
+    display: inline;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.item-description{
+    font-size: 15px;
+    display: block;
+    color: rgb(152, 153, 154);
+    font-style: italic;
+}
+
+.out-of-stock{
+    background-color: rgb(229, 84, 84);
+    border-color: rgb(229, 84, 84)
+}
+
+.out-of-stock:hover{
+    background-color: rgb(229, 84, 84);
+    border-color: rgb(229, 84, 84);
+    cursor:not-allowed;
+}
+

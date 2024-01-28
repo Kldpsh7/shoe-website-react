@@ -14,14 +14,14 @@ const ItemListItem = (props) => {
     return <>
     <div className='list-item'>
         <div className='span-div'>
-            <span>{props.name}</span>
-            <span>{props.description}</span>
-            <span>{props.price}</span>
+            <span className='item-name'>{props.name}</span>
+            <span className='item-price'>₹{props.price}/-</span>
+            <span className='item-description'>{props.description}</span>
         </div>
         <div className='button-div'>
-            <button id='s' onClick={buyButtonHandler} >{`Buy Small (${props.s})`}</button>
-            <button id='m' onClick={buyButtonHandler} >{`Buy Medium (${props.m})`}</button>
-            <button id='l' onClick={buyButtonHandler} >{`Buy Large (${props.l})`}</button>
+            <button id='s' onClick={buyButtonHandler} className={`button ${props.s===0 && 'out-of-stock'}`} title={props.s===0 && 'Out of Stock'}>{`Buy Small (${props.s})`}</button>
+            <button id='m' onClick={buyButtonHandler} className={`button ${props.m===0 && 'out-of-stock'}`} title={props.m===0 && 'Out of Stock'}>{`Buy Medium (${props.m})`}</button>
+            <button id='l' onClick={buyButtonHandler} className={`button ${props.l===0 && 'out-of-stock'}`} title={props.l===0 && 'Out of Stock'}>{`Buy Large (${props.l})`}</button>
         </div>
     </div>
     <hr/>

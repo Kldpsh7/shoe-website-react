@@ -6,11 +6,9 @@ import StockContext from '../../store/stock-context';
 const NewArticleFrom = (props) => {
 
     const stockCtx = useContext(StockContext);
-    console.log(stockCtx.items)
 
     const formSubmitHandler = e=>{
         e.preventDefault()
-        console.log(e.target.name.value,e.target.L.value)
         stockCtx.addItem({
             id:Math.random(),
             name:e.target.name.value,

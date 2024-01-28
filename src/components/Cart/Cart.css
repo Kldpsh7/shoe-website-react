@@ -1,0 +1,43 @@
+.cart-div{
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    width: max-content;
+    margin: auto;
+    background-color: aqua;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.total-div{
+    float: right;
+}
+
+.cart-button-div{
+    text-align: right;
+    clear: both;
+}
+
+.order-btn{
+    border: 1px solid rgb(128, 21, 21);
+    background-color: rgb(128, 21, 21);
+    color: white;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.order-btn:hover{
+    background-color: white;
+    color: rgb(128, 21, 21);
+}
+
+.close-btn{
+    border: 1px solid rgb(128, 21, 21);
+    background-color: white;
+    color: rgb(128, 21, 21);
+    border-radius: 30px;
+}
+
+.close-btn:hover{
+    background-color: rgb(128, 21, 21);
+    color: white;
+}

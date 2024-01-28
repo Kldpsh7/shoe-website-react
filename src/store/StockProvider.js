@@ -11,7 +11,7 @@ const StockProvider = (props) => {
             id:item.id,
             name:item.name,
             description:item.description,
-            price:+item.price,
+            price:Number(item.price).toFixed(2),
             s:+item.s,
             m:+item.m,
             l:+item.l
@@ -39,8 +39,8 @@ const StockProvider = (props) => {
                 stockContext.cartItems.push(newItemForCart);
             }
             stockContext.items[itemStockIndex][size]-=1;
-            stockContext.cartTotal+=stockContext.items[itemStockIndex].price;
-            stockContext.itemsInCart+=1;
+            stockContext.cartTotal+=+stockContext.items[itemStockIndex].price;
+            stockContext.itemsInCart++;
             setCartState({
                 items:stockContext.cartItems,
                 cartTotal:stockContext.cartTotal,

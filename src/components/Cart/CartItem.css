@@ -1,0 +1,21 @@
+.quantity{
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-size: 12px;
+    margin: 0 5px;
+    padding: 0 3px;
+}
+
+.cart-item-div{
+    width: 60%;
+    margin-left: 20%;
+    text-align: right;
+}
+
+.cart-item-name{
+    float: left;
+}
+
+.cart-item-price{
+    float: right;
+}
